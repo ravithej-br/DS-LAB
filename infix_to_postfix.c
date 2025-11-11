@@ -45,8 +45,11 @@ void infixToPostfix(char* expr) {
     printf("\n");
 }
 int main() {
-    char expr[] = "((a+b)*c-d)/e";
+    char expr[100];
+    printf("Enter the expression:");
+    scanf("%s",&expr);
     printf("Infix: %s\nPostfix: ", expr);
     infixToPostfix(expr);
     return 0;
+
 }
